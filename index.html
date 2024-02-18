@@ -8,12 +8,97 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
+<body class="my-14 max-w-[1440px] ">
+    <header class=" mx-5 lg:mx-32 lg:mb-10">
+        <!-- navbar -->
+        <nav class="mx-2">
+            <div class="navbar bg-white ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class=" text-2xl lg:text-4xl font-extrabold text-[#030712]">Shanti Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#030712B3] ">
+                        <li class=""><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <p class="pr-6 text-[#89898B] hidden md:block"><i class="fa-solid fa-magnifying-glass "></i></p>
+                    <a class="btn bg-[#1DD1005C] text-[#1DD100] font-bold shadow-md shadow-slate-500 px-7">Bus <span><img src="images/bus-icon.png" alt=""></span></a>
+                </div>
+            </div>
+        </nav>
 
     </header>
 
-    <main>
+    <main class=" mx-5 lg:mx-32 lg:mb-24">
+        <!-- Hero Banner -->
+        <section class="">
+            <div class="hero h-[550px] rounded-3xl"
+                style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-0 rounded-3xl"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-[740px]">
+                        <h1 class="mb-5 text-5xl font-bold ">End-to-End travel with <br> <span class="text-[#1DD100]">Shanti paribahan</span></h1>
+                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                            quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn bg-[#1cd100] text-black">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <!-- extra -->
+            <div class=" flex flex-col justify-center items-center md:flex-row  lg:-mt-10  gap-5 mt-5 ">
+                <!-- people -->
+                <div class="bg-white rounded-2xl flex p-6 w-[250px] shadow-md shadow-[#1cd100] gap-5">
+                    <div class="">
+                        <img src="images/people.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold ">500K+</h3>
+                        <p class=" text-[#030712B3] ">Registered users</p>
+                    </div>
+                </div>
+                <!-- ticket -->
+                <div class="bg-white gap-5 rounded-2xl flex p-6 max-w-[300px] shadow-md shadow-[#1cd100]">
+                    <div class="">
+                        <img src="images/ticket-cupon.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold ">1.7 lacks</h3>
+                        <p class=" text-[#030712B3] ">tickets sold</p>
+                    </div>
+                </div>
+
+                <!-- stop -->
+                <div class="gap-5 bg-white rounded-2xl flex p-6 w-[250px] shadow-md shadow-[#1cd100]">
+                    <div class="">
+                        <img src="images/stoppage.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold ">80K+</h3>
+                        <p class=" text-[#030712B3] ">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
