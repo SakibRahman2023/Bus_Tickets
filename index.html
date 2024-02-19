@@ -67,7 +67,7 @@
 
     </header>
     <!-- page 01 -->
-    <main class=" mx-5 lg:mx-32 lg:mb-24">
+    <main id="page_1" class=" mx-5 lg:mx-32 lg:mb-24 ">
         <!-- Hero Banner -->
         <section class="">
             <div class="hero h-[550px] rounded-3xl" style="background-image: url(images/banner.png);">
@@ -79,7 +79,7 @@
                         <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                             exercitationem
                             quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button class="btn bg-[#1cd100] text-black">Buy Tickets</button>
+                        <button onclick="buy_ticket()" class="btn bg-[#1cd100] text-black">Buy Tickets</button>
                     </div>
                 </div>
             </div>
@@ -161,7 +161,7 @@
 
     </main>
     <!-- page 02 -->
-    <main class="bg-[#F7F8F8] rounded-t-3xl">
+    <main id="page_2" class="bg-[#F7F8F8] rounded-t-3xl hidden">
         <!-- 550 taka -->
         <section class=" mx-5 lg:mx-32 lg:mb-24 ">
             <!-- part-1 -->
@@ -246,66 +246,66 @@
                     </div>
                     <hr class="border-dashed pb-5">
                     <div class="flex justify-end">
-                        <img src="images/bus staring.png" alt="">
+                        <img class="max-w-24" src="images/bus staring.png" alt="">
                     </div>
                     <div class="flex pt-5">
-                        <div class="flex flex-col space-y-8 pr-2.5">
-                            <p class="py-2.5 ">A</p>
-                            <P class="py-2.5 ">B</P>
-                            <P class="py-2.5 ">C</P>
-                            <P class="py-2.5 ">D</P>
-                            <P class="py-2.5 ">E</P>
-                            <P class="py-2.5 ">F</P>
-                            <P class="py-2.5 ">G</P>
-                            <P class="py-2.5 ">H</P>
-                            <P class="py-2.5 ">I</P>
-                            <P class="py-2.5 ">J</P>
+                        <div class="grid space-y-4 ">
+                            <kbd class="kbd  w-5 h-[56px] border-none bg-transparent">A</kbd>
+                            <kbd class="kbd  w-5 h-[56px] border-none bg-transparent">B</kbd>
+                            <kbd class="kbd  w-5 h-[56px] border-none bg-transparent">C</kbd>
+                            <kbd class="kbd  w-5 h-[56px] border-none bg-transparent">D</kbd>
+                            <kbd class="kbd  w-5 h-[56px] border-none bg-transparent">E</kbd>
+                            <kbd class="kbd  w-5 h-[56px] border-none bg-transparent">F</kbd>
+                            <kbd class="kbd  w-5 h-[56px] border-none bg-transparent">G</kbd>
+                            <kbd class="kbd  w-5 h-[56px] border-none bg-transparent">H</kbd>
+                            <kbd class="kbd  w-5 h-[56px] border-none bg-transparent">I</kbd>
+                            <kbd class="kbd  w-5 h-[56px] border-none bg-transparent">J</kbd>
                         </div>
                         <div class="grid grid-cols-2 lg:space-x-10 space-x-5 ">
                             <div class="grid grid-cols-2 gap-2 lg:gap-4">
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">A1</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">A2</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">B1</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">B2</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">C1</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">C2</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">D1</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">D2</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">E1</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">E2</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">F1</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">F2</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">G1</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">G2</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">H1</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">H2</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">I1</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">I2</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">J1</kbd>
-                                <kbd class="kbd lg:w-[110px] w-16 h-[56px] border-none">J2</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">A1</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">A2</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">B1</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">B2</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">C1</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">C2</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">D1</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">D2</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">E1</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">E2</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">F1</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">F2</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">G1</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">G2</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">H1</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">H2</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">I1</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">I2</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">J1</kbd>
+                                <kbd class="kbd lg:w-24 w-16 h-[56px] border-none">J2</kbd>
 
                             </div>
                             <div class="grid grid-cols-2 gap-2 lg:gap-4">
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">A3</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">A4</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">B3</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">B4</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">C3</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">C4</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">D3</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">D4</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">E3</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">E4</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">F3</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">F4</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">G3</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">G4</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">H3</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">H4</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">I3</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">I4</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">J3</kbd>
-                                <kbd class="kbd w-16 lg:w-[110px] h-[56px] border-none">J4</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">A3</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">A4</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">B3</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">B4</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">C3</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">C4</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">D3</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">D4</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">E3</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">E4</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">F3</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">F4</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">G3</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">G4</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">H3</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">H4</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">I3</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">I4</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">J3</kbd>
+                                <kbd class="kbd w-16 lg:w-24 h-[56px] border-none">J4</kbd>
                             </div>
                         </div>
 
@@ -347,7 +347,7 @@
                             <p>BDT<span>1100</span></p>
                         </div>
                     </div>
-                    <button class="text-white font-bold text-xl py-3 w-full bg-[#1DD100] rounded-2xl">Next</button>
+                    <button onclick="next()" class="text-white font-bold text-xl py-3 w-full bg-[#1DD100] rounded-2xl">Next</button>
                     <div class="flex justify-between pt-5">
                         <a class="underline font-medium text-[#03071299]" href="">Terms and Conditions</a>
                         <a class="underline font-medium text-[#03071299]" href="">Cancellation Policy</a>
@@ -359,7 +359,7 @@
         </section>
     </main>
     <!-- success -->
-    <section class=" mx-5 lg:mx-32 lg:mb-2 bg-slate-200 h-[700px]">
+    <section id="page_3" class=" mx-5 lg:mx-32 lg:mb-2 bg-slate-200 h-[700px] hidden">
         <div class=" flex justify-center items-center lg:pt-36">
             <div class="flex flex-col justify-between items-center bg-white w-[720px] p-12 rounded-2xl">
                 <img src="images/success.png" alt="">
@@ -368,7 +368,7 @@
                     We are working hard to find the best service and deals for you
                 </p>
                 <p class="text-[#03071299] pb-5">Shortly you will find a confirmation in your email.</p>
-                <button class="text-white py-3 font-semibold bg-green-600 rounded-2xl px-20">Continue</button>
+                <button onclick="con()" class="text-white py-3 font-semibold bg-green-600 rounded-2xl px-20">Continue</button>
             </div>
         </div>
     </section>
@@ -376,7 +376,8 @@
     <footer>
 
     </footer>
-
+    <!-- javascript -->
+    <script src="javascript/hidden-show.js"></script>
 </body>
 
 </html>
