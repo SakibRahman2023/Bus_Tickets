@@ -33,7 +33,7 @@ for (let index = 0; index < seats.length; index++) {
 
                 const eco = document.getElementById('economy')
                 const p1 = document.createElement("p");
-                p1.innerText = "Economy";
+                p1.innerText = "Business";
                 eco.appendChild(p1);
 
                 const taka = document.getElementById('tk');
