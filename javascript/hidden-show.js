@@ -16,17 +16,24 @@ function showElementById(elementId) {
 //     showElementById('page_2');
 // }
 
-
-
-
 // function next () {
 //     hideElementById('page_2');
 //     showElementById('page_3');
 // }
+function con() {
+    hideElementById('page_3');
+    showElementById('page_2')
+}
 
-
-// function con() {
-//     hideElementById('page_3');
-//     showElementById('page_2');
-// }
-
+// function bonus() {
+//             hideElementById("coupon_div");
+        // }
+function scrollToElement(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        hideElementById('page_3');
+    } else {
+        console.error("Element with ID '" + elementId + "' not found.");
+    }
+}
