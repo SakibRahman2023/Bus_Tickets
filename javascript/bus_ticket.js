@@ -1,4 +1,6 @@
 
+
+
 const seats = document.querySelectorAll(".kbd");
 let selectedSeats = 0;
 let totalPrice = 0;
@@ -8,7 +10,9 @@ for (let index = 0; index < seats.length; index++) {
     seat.addEventListener("click", function () {
         if (!seat.classList.contains('selected')) {
             if (selectedSeats < 4) {
-                seat.style.backgroundColor = 'green';
+                
+                // seat.style.backgroundColor = 'green';
+                seat.classList.add('bg-[#1cd100]');
                 seat.classList.add('selected');
                 const name = seat.querySelector("h3").innerText;
 
@@ -18,11 +22,18 @@ for (let index = 0; index < seats.length; index++) {
                 const NewNum = current + 1;
                 numInc.innerText = NewNum;
 
+                const numInc1 = document.getElementById('num-in2');
+                const currNum1 = numInc1.innerText;
+                const current1 = parseInt(currNum1);
+                const NewNum1 = current + 1;
+                numInc1.innerText = NewNum1;
+
                 const numDnc = document.getElementById('number-seat');
                 const currSeat = numDnc.innerText;
                 const currentSeat = parseInt(currSeat);
                 const NewSeat = currentSeat - 1;
                 numDnc.innerText = NewSeat;
+
 
                 const price = 550;
 
@@ -53,6 +64,9 @@ for (let index = 0; index < seats.length; index++) {
             alert("This seat has already been selected.");
         }
     });
+
+
+    
 }
 
 
